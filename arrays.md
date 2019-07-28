@@ -84,7 +84,16 @@ console.log(arr.length); // 21 - even though there are no elements between index
 
 ## Array Methods
 
-- #### `push()` :   `push`  appends one or more element to the end of an array.
+- #### `indexOf()`: returns the first index at which a given element can be found in the array, or -1 if it is not present.
+  
+  ```javascript
+  let days = let days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday'];
+  console.log(days.indexOf('Monday')); // 0
+  console.log(days.indexOf('Tuesday')); // 1
+  console.log(days.indexOf('Friday')); // -1
+  ```
+
+- #### `push()` :   `push`  appends one or more element to the end of an array.
   
   ```javascript
   let days = ['Monday'];
@@ -93,7 +102,7 @@ console.log(arr.length); // 21 - even though there are no elements between index
   console.log(days); // ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
   ```
 
-- #### `pop()` :  `pop`  takes an element from the end of an array
+- #### `pop()` :  `pop`  takes an element from the end of an array
   
   ```javascript
   let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
@@ -101,7 +110,7 @@ console.log(arr.length); // 21 - even though there are no elements between index
   console.log(days); // ["Monday", "Tuesday", "Wednesday", "Thursday"]
   ```
 
-- #### `shift()` : Extracts the first element of the array and returns it
+- #### `shift()` : Extracts the first element of the array and returns it
   
   ```javascript
   let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
@@ -109,7 +118,7 @@ console.log(arr.length); // 21 - even though there are no elements between index
   console.log(days); // ["Tuesday", "Wednesday", "Thursday", "Friday"]
   ```
 
-- #### `unshift()` : Add the element to the beginning of the array
+- #### `unshift()` : Add the element to the beginning of the array
   
   ```javascript
   let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
@@ -128,8 +137,32 @@ console.log(arr.length); // 21 - even though there are no elements between index
   >   console.log(days); // ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"]
   >   ```
 
+- #### `join()` :
 
+- #### `slice()` :
 
-##### 
+- #### `splice()` :
 
+- #### `sort()` :
 
+- #### `reverse()` :
+
+- #### `fill()` :
+
+- #### `toString()` :
+
+### Iterator methods:
+
+- #### `forEach()`
+
+- #### `keys()`
+
+- #### `map()`
+
+- #### `reduce()`
+
+- #### `filter()`
+
+- #### `find()`
+
+- 

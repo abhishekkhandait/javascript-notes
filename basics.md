@@ -24,8 +24,6 @@ let myVariable;
 > 
 > - Some examples of legal names are `Number_hits`, `temp99`, `$credit`, and `_name`.
 
-
-
 ## Datatypes
 
 JS has seven datatypes:
@@ -82,5 +80,3 @@ There are methods for conversion from strings to numbers
 
 - [`parseInt()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt "The parseInt() function parses a string argument and returns an integer of the specified radix (the base in mathematical numeral systems).")
 - [`parseFloat()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat "The parseFloat() function parses an argument and returns a floating point number.")
-
-
