@@ -1,8 +1,4 @@
-# 
-
 # *Arrays*
-
-
 
 ## Arrays are just regular objects
 
