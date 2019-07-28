@@ -1,5 +1,9 @@
 # 
 
+# *Arrays*
+
+
+
 ## Arrays are just regular objects
 
 1. the items in the array are nothing more than properties of that objects
