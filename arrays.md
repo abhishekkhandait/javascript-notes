@@ -137,7 +137,24 @@ console.log(arr.length); // 21 - even though there are no elements between index
   >   console.log(days); // ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"]
   >   ```
 
-- #### `join()` :
+- #### `join()` : returns a new string by concatenating all of the elements in an array separated by commas or a specified separator string
+  
+  ```javascript
+  let days = ["Monday", "Tuesday", "Wednesday"];
+  console.log(days.join()); // 'Monday,Tuesday,Wednesday'
+  console.log(days.join('-')); // 'Monday-Tuesday-Wednesday'
+  console.log(days.join(' ')); // 'Monday Tuesday Wednesday'
+  console.log(days.join(123)); // 'Monday123Tuesday123Wednesday'
+  ```
+
+- #### `concat()`: merge two arrays  and return it as a new array
+  
+  ```javascript
+  let days1 = ["Monday", "Tuesday", "Wednesday"];
+  let days2 = ["Thursday", "Friday", "Saturday"];
+  let days3 = days2.concat(days2);
+  console.log(days3); // ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+  ```
 
 - #### `slice()` :
 
@@ -165,4 +182,23 @@ console.log(arr.length); // 21 - even though there are no elements between index
 
 - #### `find()`
 
-- 
+## Creating a copy of an array
+
+1. Shallow copy
+   
+```mermaid
+graph TD;
+    Original_Object-->Referenced_Object;
+    Cloned_Object-->Referenced_Object;
+    
+```
+
+2. Deep Copy
+   
+```mermaid
+graph TD;
+ Original_Object-->Referenced_Object;
+ Cloned_Object-->Referenced_Clone;
+```
+   
+   
