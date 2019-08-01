@@ -147,7 +147,7 @@ console.log(arr.length); // 21 - even though there are no elements between index
   console.log(days.join(123)); // 'Monday123Tuesday123Wednesday'
   ```
 
-- #### `concat()`: merge two arrays  and return it as a new array
+- #### `concat()`: merge two arrays  and return it as a new array
   
   ```javascript
   let days1 = ["Monday", "Tuesday", "Wednesday"];
@@ -185,20 +185,41 @@ console.log(arr.length); // 21 - even though there are no elements between index
 ## Creating a copy of an array
 
 1. Shallow copy
-   
+
 ```mermaid
 graph TD;
     Original_Object-->Referenced_Object;
     Cloned_Object-->Referenced_Object;
-    
 ```
 
 2. Deep Copy
-   
+
 ```mermaid
 graph TD;
  Original_Object-->Referenced_Object;
  Cloned_Object-->Referenced_Clone;
 ```
-   
-   
+
+### ways to create a copy of array
+
+- slice method -> shallow copy
+
+- json.stringify - json.parse -> deep copy (not a correct method for comparision)
+
+- [...array] -> spread operator -> shallow copy
+
+- Array.from
+
+- Object.assign({},[]) -> shallow copy
+
+- libraries like lodash, underscore
+
+- custome method
+
+
+
+
+
+
+
+
