@@ -158,7 +158,25 @@ console.log(arr.length); // 21 - even though there are no elements between index
 
 - #### `slice()` :
 
-- #### `splice()` :
+- #### `splice()` : method changes the contents of an array by removing or replacing existing elements and/or adding new elements
+  
+  #### 
+  
+  > The built-in array method splice() is rather versatile and inserts new, deletes existing, and replaces existing elements with new elements in the array. The beauty of splice() is that it does not leave the array sparse because it will shift the elements to higher or lower positions as necessary; there will be no gap left.
+  
+  ```javascript
+  let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+  console.log(days.splice(4, 1)); // ["Friday"]
+  console.log(days); // ["Monday", "Tuesday", "Wednesday", "Thursday"]
+  
+  // Using the third argument and higher, the splice method can also be used to replace one or more elements with others
+  
+  days.splice(0, 1, "Saturday", "Sunday");
+  console.log(days); // ["Saturday", "Sunday", "Tuesday", "Wednesday", "Thrusday"]
+  
+  // splice method can also be used to clear an array
+  days.splice(0, days.length)
+  ```
 
 - #### `sort()` :
 
@@ -208,18 +226,10 @@ graph TD;
 
 - [...array] -> spread operator -> shallow copy
 
-- Array.from
+- Array.from --> shallow copy
 
 - Object.assign({},[]) -> shallow copy
 
 - libraries like lodash, underscore
 
 - custome method
-
-
-
-
-
-
-
-
