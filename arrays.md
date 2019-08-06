@@ -158,7 +158,7 @@ console.log(arr.length); // 21 - even though there are no elements between index
 
 - #### `slice()` :
 
-- #### `splice()` : method changes the contents of an array by removing or replacing existing elements and/or adding new elements
+- #### `splice()` : method changes the contents of an array by removing or replacing existing elements and/or adding new elements
   
   #### 
   
@@ -173,6 +173,14 @@ console.log(arr.length); // 21 - even though there are no elements between index
   
   days.splice(0, 1, "Saturday", "Sunday");
   console.log(days); // ["Saturday", "Sunday", "Tuesday", "Wednesday", "Thrusday"]
+  
+  // splice method can be used to add elements to end of array similar to push method
+  days.splice(days.length, 0, "Friday");
+  console.log(days); // ["Saturday", "Sunday", "Tuesday", "Wednesday", "Thrusday" , "Friday"]
+  
+  // splice method can be used to add elements to start of array similar to unshift method
+  days.splice(0, 0, "__Friday");
+  console.log(days); // ["__Friday", "Saturday", "Sunday", "Tuesday", "Wednesday", "Thrusday" , "Friday"]
   
   // splice method can also be used to clear an array
   days.splice(0, days.length)
@@ -210,6 +218,10 @@ graph TD;
     Cloned_Object-->Referenced_Object;
 ```
 
+
+
+
+
 2. Deep Copy
 
 ```mermaid
@@ -233,3 +245,89 @@ graph TD;
 - libraries like lodash, underscore
 
 - custome method
+
+
+
+### Practice Questions
+
+1. Write a function to get first n elements of an array.
+   
+   ```javascript
+   function getElements(array, n) {
+       // code comes here
+   };
+   
+   const firstN = getElements([1, 2, 3, 5, 10, 1212, 0, 'red'], 3);
+   console.log(firstN);
+   // expected output [1,2,3]
+   ```
+
+2. Write a function to join all elements of array into a string
+   
+   ```javascript
+   function joinArray(array) {
+       // code comes here
+   }
+   
+   console.log(joinArray([1, 2, 3, 4, 'javascript']));
+   // expected output 1234javascript
+   ```
+
+3. Write a function to find the most frequent element of an array
+   
+   ```javascript
+   function getMostFrequent(array) {
+       // code comes here
+   }
+   
+   getMostFrequent([1,3, 'a','a,'c', true, 1, 3, 4, 10, 1]);
+   // expected output 
+   // 'most frequent "1" --> 3 times'
+   ```
+
+4. Write a JavaScript program which accept a string as input and swap the case of each character.
+   
+   ```javascript
+   function swapCase(sentence) {
+       // code comes here
+   }
+   
+   console.log(swapCase('We are learning JavaScript'));
+   // expected output
+   // 'wE ARE LEARNING jAVAsCRIPT'
+   ```
+
+5. Write a function to print largest number in an array
+   
+   ```javascript
+   function getLargest(array) {
+       // code comes here
+   }
+   
+   console.log(getLargest([0, 10, -4, 5, 11, 16, 3]));
+   // expected output
+   // 16
+   ```
+
+6. Write a function to print sum of all the numbers in an array
+   
+   ```javascript
+   function getSum(array) {
+    // code comes here
+   }
+   console.log(getSum([1, 2, 3, 4, 5, 6, 7, 8, 9]));
+   // expected output
+   // 45
+   ```
+
+7. Write a function to return an array containing square of all the number of an array 
+   
+   ```javascript
+   function squaredArray(array) {
+      // code comes here
+   }
+   
+   console.log(squaredArray([1, 2, 3, 4, 5, 6, 7, 8, 9]));
+   // expected output
+   // [1, 4, 9, 16, 25, 36, 49, 64, 81]
+   ```
