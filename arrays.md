@@ -331,3 +331,19 @@ graph TD;
    // expected output
    // [1, 4, 9, 16, 25, 36, 49, 64, 81]
    ```
+
+
+
+8. Write a function to return the sum of squares of all the numbers of array whose squares are divisible by 4
+   
+   ```javascript
+   function getResult(array) {
+       // code comes here
+   }
+   
+   console.log(getResult([1, 2, 3, 4, 5, 6, 7, 8, 9]));
+   // expected output
+   // 120
+   ```
+
+
