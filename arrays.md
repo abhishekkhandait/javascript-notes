@@ -255,6 +255,7 @@ graph TD;
    ```javascript
    function getElements(array, n) {
        // code comes here
+       return array.slice(0, n);    
    };
    
    const firstN = getElements([1, 2, 3, 5, 10, 1212, 0, 'red'], 3);
@@ -267,6 +268,7 @@ graph TD;
    ```javascript
    function joinArray(array) {
        // code comes here
+       return array.join('');
    }
    
    console.log(joinArray([1, 2, 3, 4, 'javascript']));
@@ -280,7 +282,7 @@ graph TD;
        // code comes here
    }
    
-   getMostFrequent([1,3, 'a','a,'c', true, 1, 3, 4, 10, 1]);
+   getMostFrequent([1,3, 'a','a','c', true, 1, 3, 4, 10, 1]);
    // expected output 
    // 'most frequent "1" --> 3 times'
    ```
