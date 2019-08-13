@@ -218,10 +218,6 @@ graph TD;
     Cloned_Object-->Referenced_Object;
 ```
 
-
-
-
-
 2. Deep Copy
 
 ```mermaid
@@ -246,8 +242,6 @@ graph TD;
 
 - custome method
 
-
-
 ### Practice Questions
 
 1. Write a function to get first n elements of an array.
@@ -255,7 +249,7 @@ graph TD;
    ```javascript
    function getElements(array, n) {
        // code comes here
-       return array.slice(0, n);    
+       return array.slice(0, n);    
    };
    
    const firstN = getElements([1, 2, 3, 5, 10, 1212, 0, 'red'], 3);
@@ -279,7 +273,31 @@ graph TD;
    
    ```javascript
    function getMostFrequent(array) {
-       // code comes here
+     // code comes here
+     array.sort();
+     // object that will hold log of each unique element of array
+     const arrayLog = {};
+     for (let i = 0; i < array.length; i++) {
+       if (arrayLog[array[i]]) {
+         arrayLog[array[i]] = arrayLog[array[i]] + 1;
+       } else {
+         arrayLog[array[i]] = 1;
+       }
+     }
+     let keys = Object.keys(arrayLog);
+   
+     let largest = arrayLog[keys[0]];
+     let largestKey = keys[0];
+   
+     for (let j = 0; j < keys.length; j++) {
+       if (arrayLog[keys[j]] > largest) {
+         largest = arrayLog[keys[j]];
+         largestKey = keys[j];
+       }
+     }
+     console.log(
+       "most frequent " + '"' + largestKey + '" --> ' + largest + " times"
+     );
    }
    
    getMostFrequent([1,3, 'a','a','c', true, 1, 3, 4, 10, 1]);
@@ -290,8 +308,21 @@ graph TD;
 4. Write a JavaScript program which accept a string as input and swap the case of each character.
    
    ```javascript
+   function IsUpperCase(charecter) {
+     return charecter.toUpperCase() === charecter;
+   }
+   
    function swapCase(sentence) {
-       // code comes here
+     // code comes here
+     let charecters = sentence.split("");
+     for(let i =0; i< charecters.length; i++) {
+       if(IsUpperCase(charecters[i])) {
+         charecters[i] = charecters[i].toLowerCase();
+       } else {
+         charecters[i] = charecters[i].toUpperCase();
+       }
+     }
+     return charecters.join('')
    }
    
    console.log(swapCase('We are learning JavaScript'));
@@ -334,8 +365,6 @@ graph TD;
    // [1, 4, 9, 16, 25, 36, 49, 64, 81]
    ```
 
-
-
 8. Write a function to return the sum of squares of all the numbers of array whose squares are divisible by 4
    
    ```javascript
@@ -347,5 +376,3 @@ graph TD;
    // expected output
    // 120
    ```
-
-
