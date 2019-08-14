@@ -295,9 +295,7 @@ graph TD;
          largestKey = keys[j];
        }
      }
-     console.log(
-       "most frequent " + '"' + largestKey + '" --> ' + largest + " times"
-     );
+     console.log(`most frequent "${largestKey}" --> ${largest} times`);
    }
    
    getMostFrequent([1,3, 'a','a','c', true, 1, 3, 4, 10, 1]);
